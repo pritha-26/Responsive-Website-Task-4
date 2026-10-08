@@ -1,0 +1,125 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    background: #333;
+    color: white;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+nav {
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.hero {
+    text-align: center;
+    padding: 100px 40px;
+    background: #f2f2f2;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+button {
+    padding: 12px 25px;
+    font-size: 18px;
+    border: none;
+    background: #333;
+    color: white;
+    cursor: pointer;
+}
+
+.content {
+    display: flex;
+    gap: 30px;
+    padding: 60px 50px;
+}
+
+.box {
+    flex: 1;
+    padding: 30px;
+    background: #eeeeee;
+    text-align: center;
+}
+
+.box h2 {
+    margin-bottom: 15px;
+}
+
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Mobile Responsive Design */
+@media (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+        padding: 20px;
+        text-align: center;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 15px;
+    }
+
+    nav a {
+        font-size: 16px;
+    }
+
+    .hero {
+        padding: 60px 20px;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .content {
+        flex-direction: column;
+        padding: 30px 20px;
+    }
+
+    .box {
+        width: 100%;
+    }
+}
